@@ -33,11 +33,10 @@ const COLOURS = [
 
 // Setup function initializes the p5 sketch
 function setup() {
-	createCanvas(800, 600); // Adjust size as needed
+	createCanvas(640, 480); // Adjust size as needed
 	videoElement = createCapture(VIDEO);
 	videoElement.size(width, height);
 	videoElement.hide(); // Hide the HTML video element, use the canvas for display
-
 	// Create a paragraph element to show status messages
 	statusP = createP('Loading model...').style('color', 'blue');
 
